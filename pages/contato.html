@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="js/contato.js"></script>
+    <title>Studio Tirolli</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="imagens/logo.png" alt="logo" id="logo">
+            <ul id="nav-list">
+                <li>
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/sobrenos.html">
+                        Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a href="atividades.html">
+                        Atividades
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/planos.html">
+                        Planos
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/contato.html">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+<div class="espaco">
+    <div class="contact-form">
+    <h1 class="form-title">Fale Conosco!</h1>
+    <form onsubmit="enviarEmail(event)">
+        <label class="form-label" for="name">Nome</label>
+        <input class="form-input" type="text" id="name" name="name">
+
+        <label class="form-label" for="email">E-mail</label>
+        <input class="form-input" type="email" id="email" name="email">
+
+        <p class="client-status">
+            <input class="client-radio" type="radio" id="client" name="client-status" value="yes">
+            <label for="client">Sou cliente</label>
+        </p>
+        <p class="client-status">
+            <input class="client-radio" type="radio" id="not-client" name="client-status" value="no">
+            <label for="not-client">Não sou cliente</label>
+        </p>
+
+        <label class="form-label" for="phone">Telefone (opcional)</label>
+        <input class="form-input" type="text" id="phone" name="phone">
+
+        <p class="service-type">
+            <input class="service-radio" type="radio" id="funcional" name="service-type" value="funcional">
+            <label for="funcional">Funcional</label>
+        </p>
+        <p class="service-type">
+            <input class="service-radio" type="radio" id="consultoria" name="service-type" value="consultoria">
+            <label for="consultoria">Consultoria online</label>
+        </p>
+
+        <label class="form-label" for="message">Mensagem</label>
+        <textarea class="form-textarea" id="message" name="message"></textarea>
+
+        <button class="form-button" type="submit">Enviar</button>
+    </form>
+    <script>
+        function enviarEmail(event) {
+    event.preventDefault(); 
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const serviceType = document.querySelector('input[name="service-type"]:checked').value;
+    const message = document.getElementById('message').value;
+    
+    const body = `Nome: ${name}\nE-mail: ${email}\nTelefone: ${phone}\nTipo de Serviço: ${serviceType}\nMensagem: ${message}`;
+    const to = 'vinitirolli@gmail.com'; 
+    const subject = 'Contato Academia Tirolli'; 
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.open(mailtoLink, '_blank');
+}
+
+    </script>
+    </div>
+
+<div class="location-section">
+    <h2 class="location-title">Onde estamos</h2>
+    <p class="location-description">Estamos localizados em Rua Clemente Pereira, 113 - Campo Grande, Santos. Venha conhecer nosso espaço e treinar com a gente!</p>
+    <iframe class="localizacao" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1823.0076616752178!2d-46.34337691827128!3d-23.959898281551432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03154d408bfb%3A0xc30afea4285b4d35!2sR.%20Jos%C3%A9%20Clemente%20Pereira%2C%20113%20-%20Campo%20Grande%2C%20Santos%20-%20SP%2C%2011070-321!5e0!3m2!1spt-BR!2sbr!4v1748465279136!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="contact-info">
+    <h2 class="contact-title">Entre em contato!</h2>
+    <p class="contact-description">Estamos prontos para te atender! Tire suas dúvidas ou agende seu treino.</p>
+    <div class="icons">
+        <figure>
+            <a href="https://api.whatsapp.com/send?phone=5513981461324&text="Olá!%20Bem-vindo%20ao%20Tirolli%20StudioFit!%20💪✨%0A%0AOferecemos%20aulas%20de%20alongamento%20e%20treinamento%20funcional%20para%20melhorar%20sua%20mobilidade%20e%20força.%0A%0AAproveite%20nossa%20aula%20experimental%20grátis!%0A%0ADigite%20%27Aula%20Grátis%27%20para%20saber%20mais%20e%20agendar.&fbclid=PAZXh0bgNhZW0CMTEAAaffcErFbstq2sZtQC3z9n9E9chRKGego_g5xrFqWZX_9ZkI5TTPfzUftNa1Kg_aem_XFfXt8Df08T5yMdQMycaYg> 
+            <img src="../imagens/wpp.png.png" alt="Logo WhatsApp" loading="lazy" width="100" height="100" >
+            <figcaption> 
+        <p>WhatsApp</p>
+            </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.instagram.com/tirolli.studiofit/"> 
+            <img src="../imagens/insta.png" alt="Logo Instagram" loading="lazy" width="100" height="100" >
+            <figcaption>
+        <p>Instagram</p>
+        </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vinitirolli@gmail.com" target="_blank">
+                <script></script>
+            <img src="../imagens/email.png" alt="Simbolo email" loading="lazy" width="100" height="100" >
+            <figcaption> 
+        <p>Email</p>
+            </figcaption>
+            </a>
+        </figure>
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

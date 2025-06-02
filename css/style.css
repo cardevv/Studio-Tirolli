@@ -558,3 +558,242 @@ div.title  {
 }
 
   
+/* CONTATO */
+
+.contact-form {
+    background-color: #f6f6f6;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.client-status, .service-type {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.form-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.location-section {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.location-title {
+    font-size: 20px;
+}
+
+.location-description {
+    margin-top: 10px;
+}
+
+.location-map {
+    width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.contact-title {
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+.espaco{
+  margin: 100px 300px 100px 300px;
+  background-color: #f6f6f6;
+}
+figcaption{
+  text-align: center;
+}
+figure a {
+  text-decoration: none;
+  text-shadow: none;
+  color: inherit;
+}
+.localizacao{
+  width: 1080px;
+  padding: 20px;
+}
+
+
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #273759;
+  margin: 2rem 0 1rem 0;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+#atividades {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.card-atv {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+   
+    .card-atv > p {
+       background-color: #273759;
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+   
+
+    
+    .mini-card {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.3s ease;
+      background-color: #dbe3f2;
+      border-radius: 8px;
+      padding: 0 1rem;
+      margin-top: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 0.9rem;
+      text-align: center;
+      color: #273759;
+      z-index: 1;
+      position: relative;
+    }
+
+    .mini-card h3 {
+      margin: 12px 0 6px 0;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .mini-card p {
+      margin-bottom: 12px;
+    }
+
+    .mini-card button {
+      background-color: #506BB1;
+      color: white;
+      padding: 7px 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .mini-card button:hover {
+      background-color: #273759;
+    }
+
+    
+    .card-atv:hover .mini-card {
+      max-height: 200px; 
+      opacity: 1;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    .card-atv:hover > p {
+      transform: translateY(-20px);
+    }
+
+    .botao-tirolli {
+  background-color: #506BB1;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0; 
+}
+
+.botao-tirolli {
+  background-color: #506BB1;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao-tirolli:hover {
+  background-color: #273759;
+  transform: scale(1.05);
+}
+
+
+
+ 
+
+
+
