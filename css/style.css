@@ -54,7 +54,7 @@ header {
 #banner {
     width: 100%;
     height: 70vh;
-    background-image:url('../imagens/banner.png');
+    background-image:url('../imagens/WhatsApp\ Image\ 2025-04-28\ at\ 16.57.19.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -679,21 +679,31 @@ figure a {
   flex-wrap: wrap;
 }
 .card-atv {
-  position: relative;
-  overflow: hidden;
+
+ 
+  
+}
+
+.card-atv img {
+  width: 100%;
 }
 
 
 
    
     .card-atv > p {
+      
+      padding-top: 20px;
+      text-align: center;
        background-color: #273759;
-      font-size: 1.1rem;
+      font-size: 2.0rem;
       color: #ffffff;
-      margin-bottom: 0.5rem;
+      padding-top: -10px;
       transition: transform 0.3s ease;
       position: relative;
       z-index: 2;
+     height: 80px;
+     width: 100%;
     }
 
    
@@ -714,6 +724,7 @@ figure a {
       color: #273759;
       z-index: 1;
       position: relative;
+      width: 100%;
     }
 
     .mini-card h3 {
@@ -723,7 +734,7 @@ figure a {
     }
 
     .mini-card p {
-      margin-bottom: 12px;
+     
     }
 
     .mini-card button {
@@ -790,6 +801,51 @@ figure a {
   background-color: #273759;
   transform: scale(1.05);
 }
+
+
+/* ===== RESPONSIVO (TELAS ATÉ 768px) ===== */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .titulo {
+    font-size: 28px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .card-atv,
+  .card-plano {
+    max-width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .localizacao iframe {
+    height: 250px;
+  }
+}
+
 
 
 
