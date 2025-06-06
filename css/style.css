@@ -804,47 +804,124 @@ figure a {
 
 
 /* ===== RESPONSIVO (TELAS ATÉ 768px) ===== */
+/* Dispositivos médios: tablets */
 @media (max-width: 768px) {
-  .banner h1 {
-    font-size: 32px;
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
   }
 
-  .banner p {
-    font-size: 16px;
+  #nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
-  .titulo {
+  #logo {
+    margin-top: 0;
+    height: 120px;
+  }
+
+  #banner h1 {
+    font-size: 36px;
+    margin-right: 0;
+  }
+
+  #banner p {
+    font-size: 22px;
+    margin-right: 0;
+  }
+
+  #banner button {
+    margin-right: 0;
+  }
+
+  #sobre {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  #sobre img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sobredesc {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  #div-icones {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .carrossel {
+    width: 90%;
+  }
+
+  .slide img {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parceiros-beneficios {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .imagem img {
+    width: 100%;
+    height: auto;
+  }
+
+  .localizacao {
+    width: 100%;
+    padding: 0;
+  }
+
+  #atividades {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Dispositivos pequenos: celulares */
+@media (max-width: 480px) {
+  #banner h1 {
     font-size: 28px;
   }
 
-  .subtitulo {
+  #banner p {
+    font-size: 18px;
+  }
+
+  #banner button {
     font-size: 16px;
-    padding: 0 10px;
+    padding: 12px 24px;
   }
 
-  .card-atv,
-  .card-plano {
-    max-width: 90%;
+  .form-title, .location-title, .contact-title {
+    font-size: 18px;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .form-input, .form-textarea {
+    padding: 8px;
   }
 
-  .menu {
-    margin-top: 10px;
-  }
-
-  .menu a {
-    display: block;
-    margin: 5px 0;
-  }
-
-  .localizacao iframe {
-    height: 250px;
+  .btn-consultoria, .form-button, .card button, .mini-card button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
   }
 }
+
 
 
 
