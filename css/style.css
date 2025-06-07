@@ -27,7 +27,7 @@ header {
 }
 
 #logo {
-    margin-top: 100px;
+   
     height: 200px;
     width: auto;
 }
@@ -833,9 +833,6 @@ figure a {
   transform: scale(1.05);
 }
 
-
-
-
 /* Responsividade para telas entre 768px e 1200px (notebooks e similares) */
 @media (max-width: 1200px) {
   
@@ -936,6 +933,8 @@ figure a {
     font-size: 0.85rem;
   }
 }
+
+
 
 
 
