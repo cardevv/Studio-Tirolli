@@ -328,12 +328,43 @@ header {
   }
 
   #footer {
-    background-color: #2e2e2e;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 1rem;
-  }
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-info p,
+.footer-credit p {
+  margin: 0.3rem 0;
+}
+.footer-icon-link {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon-link:hover {
+  color: #f09433; /* tom alaranjado do Instagram */
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+}
+
 
   /* SOBRENOS */
 
