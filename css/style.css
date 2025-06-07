@@ -357,7 +357,7 @@ header {
 }
 
 .footer-icon-link:hover {
-  color: #f09433; /* tom alaranjado do Instagram */
+  color: #f09433; 
 }
 
 .footer-icon {
@@ -832,6 +832,111 @@ figure a {
   background-color: #273759;
   transform: scale(1.05);
 }
+
+
+
+
+/* Responsividade para telas entre 768px e 1200px (notebooks e similares) */
+@media (max-width: 1200px) {
+  
+  #navbar {
+    padding: 0 20px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  #logo {
+    margin-top: 20px;
+    height: 150px;
+  }
+
+  #nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  #banner {
+    height: 60vh;
+    background-position: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  #banner h1,
+  #banner p {
+    margin-right: 0;
+  }
+
+  #banner button {
+    margin: 0 auto;
+  }
+
+  #sobre {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  #sobre img {
+    width: 100%;
+  }
+
+  .sobredesc {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  #div-icones {
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+
+  .carrossel {
+    width: 80%;
+  }
+
+  .imagem img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards-container {
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .parceiros-beneficios {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .localizacao {
+    width: 100%;
+  }
+
+  .espaco {
+    margin: 40px 20px;
+  }
+
+  #atividades {
+    gap: 20px;
+  }
+
+  .card-atv > p {
+    font-size: 1.5rem;
+  }
+
+  .mini-card {
+    font-size: 0.85rem;
+  }
+}
+
 
 
 /* ===== RESPONSIVO (TELAS ATÉ 768px) ===== */
