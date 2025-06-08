@@ -515,6 +515,20 @@ div.title  {
     margin-bottom: 10px;
     font-size: 0.95rem;
 }
+.card li span {
+  display: block;
+  line-height: 1.4;
+}
+
+.card li span:first-child {
+  font-weight: 500;
+}
+
+.card li span:last-child {
+  color: #273759;
+  font-weight: bold;
+}
+
 
 .card button {
     background-color: #506BB1;
