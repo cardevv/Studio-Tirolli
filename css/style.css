@@ -48,7 +48,7 @@ header {
 }
 
 #nav-list a:hover {
-    color: #6e6d68; 
+    color: #fff;  
 }
 
 
@@ -865,6 +865,17 @@ figure a {
 .botao-tirolli:hover {
   background-color: #273759;
   transform: scale(1.05);
+} 
+.link-horarios a {
+  color: gray;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+.link-horarios a:hover{
+  color: #506BB1;
+  text-decoration: none;
 }
 
 /* Para notebooks médios (ex: 992px a 1366px) */
