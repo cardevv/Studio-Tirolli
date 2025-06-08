@@ -1171,6 +1171,11 @@ figure a {
     padding: 12px 24px;
   }
 
+  .container {
+  flex-direction: column;
+  align-items: center;
+  }
+
   .form-title, .location-title, .contact-title {
     font-size: 18px;
   }
