@@ -926,7 +926,7 @@ figure a {
 
 
 /* Responsividade para telas entre 768px e 1200px (notebooks e similares) */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   
   #navbar {
     padding: 0 20px;
